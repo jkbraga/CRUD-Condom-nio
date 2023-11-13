@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<style>
+#login{
+    background-color: rgba(64, 130, 168, 0.722);
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding-top: 5px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 15px;
+            border-radius: 15px;
+            color: #fff;
+}
+
+#login h1{
+    padding: 10px;
+    text-align: center;
+}
+#name {
+    border-radius: 5px;
+
+}
+#password {
+    border-radius: 5px;
+}
+
+.submit{
+    border-radius: 5px;
+    background: #1a5771;
+    padding: 10px;
+    color: #fff;
+
+}
+
+.submit:hover{
+    background-color: #657bd1;
+    cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+       <div>
+       <img src="images/Condomínio Paraíso.png" id="logo" width="14%">
+       <img src="images/entrance.png" alt="50% " id="entrance"  width="1150px" height="180px">
+       </div>  
+       <div id="line-up"></div>
+     <div class="header">
+       <span>Tela de Login</span>
+     </div>
+     <div id="line-bottom"></div>
+    
+     <div id="login">
+        <h1>Login</h1>
+        <form action="main.html" method="get">
+            <input id="name" type="text" name="Name" placeholder="Name">
+            <br><br>
+            <input id="password" type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <input class="submit" type="submit" name="submit" value="Enviar">
+        </form>
+    </div>    
+    
+</body>

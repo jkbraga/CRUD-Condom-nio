@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <aside>
+    <nav>
+      <a href="main.html">Tela Inicio</a>
+      <a href= "Cadastro_moradores.html"> Cadastrar moradores</a>
+      <a href="Cadastro_veículos.html">Cadastrar veículos</a>
+      <a href="Tela_tag.html">Tela TAG</a>
+      <a href="Pesquisar.html">Pesquisar</a>
+      <a href="Relatórios.html">Relatórios</a>
+      <a href="#">Sair</a>
+    </nav>
+ </aside>
+
+   <div class="container">
+      <div>
+      <img src="images/Condomínio Paraíso.png" id="logo" width="14%">
+      <img src="images/entrance.png" alt="50% " id="entrance"  width="1150px" height="180px">
+      </div>  
+      <div id="line-up"></div>
+    <div class="header">
+      <span>Cadastro de Veículos</span>
+    </div>
+    <div id="line-bottom"></div>
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de Veículo</th>
+            <th>Ano</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Renavam</th>
+            <th>Placa</th>
+            <th>Tag</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-tipoVeículo">Tipo de Veículo</label>
+          <input id="m-tipoVeículo" type="text" required />
+
+          <label for="m-ano">Ano</label>
+          <input id="m-ano" type="number" required />
+
+          <label for="m-Modelo">Modelo</label>
+          <input id="m-Modelo" type="text" required />
+
+          <label for="m-Cor">Cor</label>
+          <input id="m-Cor" type="text" required />
+  
+          <label for="m-Renavam">Renavam</label>
+          <input id="m-Renavam" type="text" required />
+  
+          <label for="m-placa">Placa</label>
+          <input id="m-placa" type="text" required />
+
+          <label for="m-tag">Tag</label>
+          <input id="m-tag" type="text" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="veiculos.js"></script>
+</body>
+
+</html>
