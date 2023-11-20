@@ -53,11 +53,12 @@ button {
 }
 
 .divTable {
+  margin-left: 200px;
   padding: 6px;
   width: auto; 
   height:inherit; 
   overflow:auto;
-}
+ }
 
 .divTable::-webkit-scrollbar {
   width: 12px;
@@ -250,8 +251,8 @@ td button i:first-child {
 
 aside{
   height: 100%;
-  width: 250px;
-  position:fixed;
+  width: 210px;
+  position:absolute;
   z-index:1;
   left: 75px;;
   top: 285px;
